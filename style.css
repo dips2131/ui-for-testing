@@ -1,0 +1,121 @@
+/* Reset margins and paddings, and ensure consistent box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background and default font */
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: white;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between; /* Space between items for left and right div */
+    align-items: center; /* Vertically align items */
+    padding: 0 2rem;
+}
+
+.nav-logo {
+    width: 2rem;
+    height: 2rem;
+}
+
+ul.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+ul.nav-links li {
+    display: inline-block;
+    margin-right: 3rem; /* Adjusted spacing between list items */
+}
+
+ul.nav-links > span {
+    font-size: 0.75rem; /* Slightly larger font for better readability */
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+/* Search Input Styling */
+nav > div > input {
+    border: none;
+    background-color: rgb(199, 224, 231);
+    height: 1.8rem;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+}
+
+/* Flexbox layout for main content */
+main {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between; /* Adjusted space between sections */
+}
+
+/* Left and Right Side Sections Styling */
+.side-section {
+    width: 22%;
+}
+
+/* Middle Section Styling */
+.middle-section {
+    width: 40%;
+}
+
+/* Common Box Styling */
+.side-section > div,
+.middle-section > div {
+    background-color: white;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    border: 1px solid #ccc; /* Adding border for better visibility */
+}
+
+/* Box Height Adjustments */
+.create-post {
+    height: 5rem;
+    background-color: #f1f1f1;
+    border: 1px dashed #bbb; /* A dashed border for the "create post" box */
+}
+
+.post {
+    height: 15rem;
+    background-color: #e9e9e9;
+    border: 1px solid #bbb; /* Solid border for post boxes */
+}
+
+/* Text Styling inside side sections */
+.side-section > div > p {
+    font-size: 0.7rem;
+    color: grey;
+}
+
+/* Image Styling inside side section */
+.side-section > div > img {
+    height: 4rem; /* Adjusted size for better visual balance */
+    width: 4rem;
+    justify-content: space-around;
+    margin: 1rem auto; /* Centers image and reduces margin */
+    border-radius: 50%;
+}
+
+/* Ensure boxes in the main content are well-defined */
+.side-section .box,
+.middle-section .box {
+    background-color: lightblue;
+    height: 5rem; /* Define height for visibility */
+    border: 1px solid #bbb;
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
